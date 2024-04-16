@@ -1,0 +1,218 @@
+:root {
+  --h1-color: #048304;
+  --card-border-color: #55af42;
+}
+
+
+h1 {
+  color: var(--h1-color);
+}
+
+
+.App {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: calc(10px + 2vmin);
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.Open-entries-main-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.primary-button {
+  margin-bottom: 1rem;
+  cursor: pointer;
+  background-color: #5bd41f;
+  font-size: 1rem;
+  border: none;
+  border-radius: 10px;
+  padding: 0.5rem;
+  color: white;
+  font-weight: bold;
+}
+
+.primary-button:hover {
+  background-color: #64c536;
+}
+
+.back-button {
+  box-sizing: content-box;
+  cursor: pointer;
+  border: 0;
+  border-radius: .375rem;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+
+
+.Open-entries-main-div h1 {
+}
+
+.Open-entries {
+  justify-self: flex-start;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center !important;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.entry1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: solid 1px var(--card-border-color);
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.entry1 .div1 {
+  align-self: flex-start;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  gap: 0.5rem;
+}
+
+.entry1 .potential-exit {
+  margin: 1rem 0 1rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: solid 1px #55af42;
+  font-weight: bold;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.entry1 .close-entry {
+  font-weight: bold;
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: white;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.close-entry-button {
+  background-color: #06cd06;
+  cursor: pointer;
+  font-size: 1rem;
+  border: none;
+  border-radius: 10px;
+  padding: 0.5rem;
+  align-self: flex-end;
+  color: white;
+}
+
+.tradingview-button {
+  background-image: url("/public/tradingview.ico");
+  cursor: pointer;
+  height: 32px;
+  width: 32px;
+  border: none;
+  background-size: cover;
+}
+
+.new-entry-form-div {
+  display: flex;
+  flex-direction: column;
+  max-width: 250px;
+  margin: auto;
+  border-radius: 10px;
+  border: solid 1px var(--card-border-color);
+  padding: 1rem;
+}
+
+.input-error {
+  background-color: rgba(215, 222, 215, 0.36);
+}
+
+.close-entry-form {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  max-width: 250px;
+  margin: auto;
+  border-radius: 10px;
+  border: solid 1px var(--card-border-color);
+  padding: 1rem;
+  background-color: #fff;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(38, 196, 20, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.flex-direction-column {
+  flex-direction: column;
+}
+
+.flex-gap-1 {
+  gap: 1rem;
+}
+
+.flex-gap-025 {
+  gap: 0.25rem;
+}
+
+.width-100 {
+  width: 100%;
+}
+
+.margin-bottom-1 {
+  margin-bottom: 1rem;
+}
+
+.margin-bottom-05 {
+  margin-bottom: 0.5rem;
+}
